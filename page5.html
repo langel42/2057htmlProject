@@ -1,0 +1,101 @@
+<!-- PAGE5.HTML - CONTACT US -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+	<style>
+        /* Style for navigation bar */
+        nav {
+            background-color: #404bad; /* Background color of the navigation bar */
+            color: #ffffff; /* Text color of the navigation bar */
+            width: 200px; /* Width of the navigation bar */
+            height: calc(100vh - 40px); /* Full height of the viewport minus space from screen bottom */
+            float: left; /* Float navigation bar to the left */
+			border: 3px solid #060a42 /* Border for clarity */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points from the list */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        nav a {
+            display: block; /* Display links as blocks */
+            text-decoration: none; /* Remove underline from links */
+            padding: calc(100% / 6) 20px; /* Padding around the text */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+            color: #ffffff; /* Text color of the links */
+        }
+
+        nav a:hover {
+            background-color: #689fd9; /* Background color of links on hover */
+        }
+
+        /* Style for content area */
+        .content {
+            margin-left: 220px; /* Adjust margins */
+			margin-right: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+            padding: 25px; /* Add padding */
+			background-color: #bfe2ff; /* Container color */
+			border: 3px solid #060a42 /* Border for clarity */
+        }
+		
+		body {
+			background-image: url('bg1.jpg');
+			background-size: cover;
+			font-family: Verdana, sans-serif; /* Use Verdana as the primary font, sans-serif as a fallback */
+		}
+    </style>
+</head>
+<body>
+
+<nav>
+    <!-- Sidebar Navbar for Layout B -->
+    <ul>
+        <li><a href="index.html">Page 1 - Homepage</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+        <li><a href="page6.html">Page 6 - Citation Page</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+	<h1>Contact Us</h1>
+
+	<!-- Feedback Form -->
+	<h2>Feedback Form</h2>
+	<form action="#" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		<label for="message">Message:</label><br>
+		<textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<!-- Social Media Links -->
+	<h2>Social Media Profiles</h2>
+	<ul>
+		<li><a href="https://www.instagram.com/uwindsorcss/">Instagram</a></li>
+		<li><a href="https://twitter.com/UWindsor">Twitter</a></li>
+		<li><a href="https://www.linkedin.com/school/uwindsor/">LinkedIn</a></li>
+	</ul>
+
+	<!-- Clickable Map -->
+	<h2>Location</h2>
+	<p><i>Click on the red marker for directions</i></p>
+	<img src="map.jpg" alt="Clickable Map" usemap="#locationMap" width="889" height="663">
+	<map name="locationMap">
+		<area shape="circle" coords="416,553,50" alt="Office Location" href="https://www.google.com/maps/place/University+of+Windsor/@42.3043181,-83.0686139,17z/data=!3m1!4b1!4m6!3m5!1s0x883b2d77c6ec4bef:0x1a44f1192a4e41ee!8m2!3d42.3043142!4d-83.066039!16zL20vMDF5OXBr?entry=ttu">
+	</map>
+</main>
+</body>
+</html>

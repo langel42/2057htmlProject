@@ -1,0 +1,186 @@
+<!-- PAGE2.HTML - WEB TECHNOLOGIES -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies</title>
+	<style>
+        /* Style for navigation bar */
+        nav {
+            background-color: #404bad; /* Background color of the navigation bar */
+            color: #ffffff; /* Text color of the navigation bar */
+            width: 200px; /* Width of the navigation bar */
+            height: calc(100vh - 40px); /* Full height of the viewport minus space from screen bottom */
+            float: left; /* Float navigation bar to the left */
+			border: 3px solid #060a42 /* Border for clarity */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points from the list */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        nav a {
+            display: block; /* Display links as blocks */
+            text-decoration: none; /* Remove underline from links */
+            padding: calc(100% / 6) 20px; /* Padding around the text */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+            color: #ffffff; /* Text color of the links */
+        }
+
+        nav a:hover {
+            background-color: #689fd9; /* Background color of links on hover */
+        }
+
+        /* Style for content area */
+        .content {
+            margin-left: 220px; /* Adjust margins */
+			margin-right: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+            padding: 25px; /* Add padding */
+			background-color: #bfe2ff; /* Container color */
+			border: 3px solid #060a42 /* Border for clarity */
+        }
+		
+		body {
+			background-image: url('bg1.jpg');
+			background-size: cover;
+			font-family: Verdana, sans-serif; /* Use Verdana as the primary font, sans-serif as a fallback */
+		}
+    </style>
+</head>
+<body>
+
+<nav>
+    <!-- Sidebar Navbar for Layout B -->
+    <ul>
+        <li><a href="index.html">Page 1 - Homepage</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="page5.html">Page 5</a></li>
+        <li><a href="page6.html">Page 6 - Citation Page</a></li>
+    </ul>
+</nav>
+
+<!-- Content Area -->
+<main class="content">
+	<h1>Web Technologies: Understanding Protocols and Standards</h1>
+
+	<!-- Table 1: Web Technologies -->
+	<h2>Web Technologies</h2>
+	<table border="1">
+		<tr>
+			<th>Technology</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>HTML</td>
+			<td>Hypertext Markup Language for creating web pages.</td>
+		</tr>
+		<tr>
+			<td>CSS</td>
+			<td>Cascading Style Sheets for styling web pages.</td>
+		</tr>
+		<tr>
+			<td>JavaScript</td>
+			<td>Client-side scripting language for dynamic web content.</td>
+		</tr>
+	</table>
+	<!-- Table 2: Types of Protocols -->
+	<h2>Types of Protocols</h2>
+	<table border="1">
+		<tr>
+			<th>Protocol</th>
+			<th>Description</th>
+		<tr>
+			<td>HTTP</td>
+			<td>Hypertext Transfer Protocol for transmitting data over the web.</td>
+		</tr>
+		<tr>
+			<td>TCP/IP</td>
+			<td>Transmission Control Protocol/Internet Protocol is a suite of communication protocols used to interconnect network devices on the internet.</td>
+		</tr>
+		<tr>
+			<td>SMTP</td>
+			<td>Simple Mail Transfer Protocol is a protocol used for sending email messages between servers.</td>
+		</tr>
+		<tr>
+			<td>PPP</td>
+			<td>Point-to-Point Protocol is a data link protocol used to establish a direct connection between two nodes.</td>
+		</tr>
+		<tr>
+			<td>FTP</td>
+			<td>File Transfer Protocol is a standard network protocol used to transfer files between a client and a server on a computer network.</td>
+		</tr>
+		<tr>
+			<td>SFTP</td>
+			<td>SSH File Transfer Protocol is a secure file transfer protocol that provides secure file access, transfer, and management functionalities over SSH.</td>
+		</tr>
+		<tr>
+			<td>HTTPS</td>
+			<td>Hypertext Transfer Protocol Secure is an extension of HTTP used for secure communication over a computer network, especially the internet.</td>
+		</tr>
+		</tr>
+	</table>
+
+	<!-- Table 3: Examples of Protocols -->
+	<h2>Examples of Protocols</h2>
+	<table border="1">
+		<tr>
+			<th>Protocol</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>HTTP</td>
+			<td><pre>&lt;GET /index.html HTTP/1.1&gt;</pre></td>
+		</tr>
+		<tr>
+			<td>HTML</td>
+			<td><pre>&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+  &lt;head&gt;
+	&lt;title&gt;Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+	&lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre></td>
+		</tr>
+		<tr>
+		<td>FTP</td>
+		<td><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+	&lt;title&gt;FTP Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;FTP Example&lt;/h1&gt;
+	
+	&lt;p&gt;This is a simple example of using FTP to upload a file to a server:&lt;/p&gt;
+	
+	&lt;form action="upload.php" method="post" enctype="multipart/form-data"&gt;
+		&lt;label for="file"&gt;Select file to upload:&lt;/label&gt;
+		&lt;input type="file" name="file" id="file"&gt;
+		&lt;input type="submit" value="Upload File" name="submit"&gt;
+	&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></td>
+        </tr>
+	</table>
+
+	<!-- External Resource Links -->
+	<h2>External Resources</h2>
+	<ul>
+		<li><a href="https://www.geeksforgeeks.org/protocol-and-standard-in-computer-networks/">Protocol and Standard in Computer Networks</a></li>
+		<li><a href="https://www.geeksforgeeks.org/types-of-internet-protocols/">Types of Internet Protocol</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML Documentation</a></li>
+	</ul>
+</main>
+</body>
+</html>
